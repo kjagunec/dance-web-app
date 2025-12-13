@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-3">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top fs-4">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img class="img-fluid" style="max-height: 80px" src="https://banderillas.hr/wp-content/uploads/2023/09/logo3.png" alt="logo">
@@ -9,7 +9,7 @@
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto gap-4">
-        <li class="nav-item"><a class="nav-link" href="#">Naslovnica</a></li>
+        <li class="nav-item"><a class="nav-link" [ngClass]="currentRoute == '/' ? 'active text-danger' : ''" href="#">Naslovnica</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Tečajevi</a></li>
         <li class="nav-item"><a class="nav-link" href="#">O nama</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
