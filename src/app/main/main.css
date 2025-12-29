@@ -1,0 +1,22 @@
+.hero {
+  height: 100vh;
+  background: url("https://banderillas.hr/wp-content/uploads/2023/01/2211.png") center/cover no-repeat;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.card {
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
