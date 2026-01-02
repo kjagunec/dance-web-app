@@ -49,4 +49,11 @@ body {
 .btn-gold {
   background-color: var(--gold);
   color: white;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #5f4329;
+  color: white;
 }
