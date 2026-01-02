@@ -1,7 +1,6 @@
 .hero {
   height: 100vh;
   background: url("../../../public/bg.webp") center/cover no-repeat;
-  position: relative;
 }
 .hero::after {
   content: "";
