@@ -2,6 +2,7 @@
 :root {
   --gold: #725132;
   --purple: #1f1a38;
+  --bg-gold: #ede2d7;
 }
 
 body {
@@ -10,6 +11,11 @@ body {
 
 .text-gold, .nav-link:hover{
   color: var(--gold);
+}
+
+.bg-gold {
+  background-color: var(--bg-gold);
+  color: var(--purple);
 }
 
 .navbar-brand img {
