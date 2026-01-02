@@ -1,0 +1,27 @@
+.social-button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram {
+  background-color: #E4405F;
+  margin-left: 2%;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.social-button:hover {
+  background-color: black
+}
+
+.social-button i {
+  color: white;
+}
