@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import {NavService} from '../services/nav-service';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './main.html',
   styleUrl: './main.css',
 })

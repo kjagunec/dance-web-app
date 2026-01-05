@@ -35,3 +35,8 @@ a {
   background-color: #5f4329;
   color: white;
 }
+
+.title-gold {
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
