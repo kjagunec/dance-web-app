@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import {NavService} from '../services/nav-service';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-dances',
   imports: [],
-  templateUrl: './main.html',
-  styleUrl: './main.css',
+  templateUrl: './dances.html',
+  styleUrl: './dances.css',
 })
-export class Main {
+export class Dances {
 
   constructor(private navService: NavService) { }
 
