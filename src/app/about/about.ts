@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 import {NavService} from '../services/nav-service';
-import {RouterLink} from '@angular/router';
 
 @Component({
-  selector: 'app-main',
-  imports: [
-    RouterLink
-  ],
-  templateUrl: './main.html',
-  styleUrl: './main.css',
+  selector: 'app-about',
+  imports: [],
+  templateUrl: './about.html',
+  styleUrl: './about.css',
 })
-export class Main {
+export class About {
 
   constructor(private navService: NavService) { }
 

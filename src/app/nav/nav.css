@@ -6,7 +6,7 @@
   transform: scale(1.1);
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, .nav-link:focus, .nav-link.active {
   color: var(--gold);
 }
 
