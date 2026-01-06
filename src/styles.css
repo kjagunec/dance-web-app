@@ -24,6 +24,11 @@ a {
   color: var(--purple);
 }
 
+.bg-purple {
+  background-color: var(--purple);
+  color: var(--bg-gold);
+}
+
 .btn-gold {
   background-color: var(--gold);
   color: white;
@@ -39,4 +44,12 @@ a {
 .title-gold {
   margin-bottom: 1.5rem;
   color: var(--gold);
+}
+
+.scale-up {
+  transition: transform 0.3s ease;
+}
+
+.scale-up:hover {
+  transform: scale(1.1);
 }
