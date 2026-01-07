@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import {NavService} from '../services/nav-service';
+import {Form} from '../form/form';
 
 @Component({
   selector: 'app-courses',
-  imports: [],
+  imports: [
+    Form
+  ],
   templateUrl: './courses.html',
   styleUrl: './courses.css',
 })
