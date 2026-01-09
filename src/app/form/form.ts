@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {FormModel} from '../models/form-model';
 
 @Component({
   selector: 'app-form',
@@ -8,6 +9,6 @@ import {Component, Input} from '@angular/core';
 })
 export class Form {
 
-  @Input() course = '';
+  @Input() form!: FormModel;
 
 }

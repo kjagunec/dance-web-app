@@ -41,6 +41,18 @@ a {
   color: white;
 }
 
+.btn-outline-gold {
+  border: solid 1px var(--gold);
+  color: var(--gold);
+  padding: 0.6rem 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: white;
+}
+
 .title-gold {
   margin-bottom: 1.5rem;
   color: var(--gold);

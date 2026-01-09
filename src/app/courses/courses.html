@@ -26,10 +26,16 @@
           </div>
         </div>
         <div class="card-footer bg-white d-flex">
-          <button class="btn btn-gold mx-auto w-50" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm">Prijavi se na tečaj</button>
+          <button
+            class="btn btn-gold mx-auto w-50"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#' + begginerCourse.formId"
+            aria-expanded="false"
+            aria-controls="{{begginerCourse.formId}}">Prijavi se na tečaj</button>
         </div>
       </div>
-      <app-form></app-form>
+      <app-form [form]="begginerCourse"></app-form>
     </div>
     <div class="col-12 col-lg-6">
       <div class="card">
@@ -49,9 +55,16 @@
           </div>
         </div>
         <div class="card-footer bg-white d-flex">
-          <button class="btn btn-gold mx-auto w-50">Prijavi se na tečaj</button>
+          <button
+            class="btn btn-gold mx-auto w-50"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#' + advancedCourse.formId"
+            aria-expanded="false"
+            aria-controls="{{advancedCourse.formId}}">Prijavi se na tečaj</button>
         </div>
       </div>
+      <app-form [form]="advancedCourse"></app-form>
     </div>
   </section>
 </div>
