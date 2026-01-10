@@ -24,6 +24,11 @@ a {
   color: var(--purple);
 }
 
+.bg-purple {
+  background-color: var(--purple);
+  color: var(--bg-gold);
+}
+
 .btn-gold {
   background-color: var(--gold);
   color: white;
@@ -36,7 +41,36 @@ a {
   color: white;
 }
 
+.btn-outline-gold {
+  border: solid 1px var(--gold);
+  color: var(--gold);
+  padding: 0.6rem 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: white;
+}
+
 .title-gold {
   margin-bottom: 1.5rem;
   color: var(--gold);
+}
+
+.scale-up {
+  transition: transform 0.3s ease;
+}
+
+.scale-up:hover {
+  transform: scale(1.1);
+}
+
+.pop-out {
+  transition: .3s;
+}
+
+.pop-out:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }

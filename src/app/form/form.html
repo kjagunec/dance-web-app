@@ -1,0 +1,43 @@
+<form class="collapse mt-3 border border-secondary-subtle rounded p-3" id="{{form.formId}}">
+  <h5 class="mb-3">Prijava za {{form.courseName.toLowerCase()}}</h5>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="name" placeholder="Name">
+    <label for="name">Ime*</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="surname" placeholder="Surname">
+    <label for="surname">Prezime*</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email">
+    <label for="email">Email*</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="tel" class="form-control" id="phoneNumber" placeholder="PhoneNumber">
+    <label for="phoneNumber">Broj telefona*</label>
+  </div>
+  <div class="form-floating mb-3">
+    <select class="form-select" id="course" aria-label="Odabrani tečaj" disabled>
+      <option selected>{{form.courseName}}</option>
+    </select>
+    <label for="course">Odabrani tečaj</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Napomene" id="remarks"></textarea>
+    <label for="remarks">Napomene</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="" id="informationCheck">
+    <label class="form-check-label" for="informationCheck">
+      Slažem se sa upotrebom osobnih podataka*
+    </label>
+  </div>
+  <button type="submit" class="btn btn-gold">Pošalji</button>
+  <button
+    type="button"
+    class="btn btn-outline-gold ms-2"
+    data-bs-toggle="collapse"
+    [attr.data-bs-target]="'#' + form.formId"
+    aria-expanded="false"
+    aria-controls="{{form.formId}}">Odustani</button>
+</form>

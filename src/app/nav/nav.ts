@@ -19,8 +19,7 @@ export class Nav {
   constructor(private navService: NavService) { }
 
   ngOnInit() {
-    this.navService.getCurrentRoute().subscribe(route => { this.currentRoute = route;
-      console.log(this.currentRoute);});
+    this.navService.getCurrentRoute().subscribe(route => { this.currentRoute = route });
     this.navService.checkCurrentRoute();
   }
 
