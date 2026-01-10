@@ -7,7 +7,7 @@
         !
       </span>
   </p>
-  <section class="row g-4">
+  <section class="row g-4 pb-5 border-bottom">
     <div class="col-12 col-lg-6">
       <div class="card">
         <div class="card-body bg-gold">
@@ -65,6 +65,36 @@
         </div>
       </div>
       <app-form [form]="advancedCourse"></app-form>
+    </div>
+  </section>
+  <h4 class="my-3">Privatni satovi</h4>
+  <section class="row g-4">
+    <div class="col-12 col-lg-6">
+      <div class="card">
+        <div class="card-body bg-gold">
+          <h5 class="card-title">Privatni satovi za parove i mladence</h5>
+          <div class="card-text">
+            <p>Ekskluzivna ponuda za parove i mladence!</p>
+            <p class="fw-semibold">Informacije</p>
+            <ul>
+              <li>Vrijeme i termin održavanja: <b>Po dogovoru!</b></li>
+              <li>Lokacija: Šubićeva 20, Češki Dom 1. kat</li>
+              <li>Cijena: <b>45€</b> za 1h</li>
+              <li><b>POPUST</b> NA 5 SATI (<b>200€</b>) I NA 10 SATI (<b>350€</b>)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-footer bg-white d-flex">
+          <button
+            class="btn btn-gold mx-auto w-50"
+            type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#' + privateLesson.formId"
+            aria-expanded="false"
+            aria-controls="{{privateLesson.formId}}">Prijavi se</button>
+        </div>
+      </div>
+      <app-form [form]="privateLesson"></app-form>
     </div>
   </section>
 </div>
