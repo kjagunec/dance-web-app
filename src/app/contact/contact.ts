@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavService} from '../services/nav-service';
 
 @Component({
   selector: 'app-contact',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './contact.css',
 })
 export class Contact {
+
+  constructor(private navService: NavService) { }
+
+  ngOnInit() {
+    this.navService.checkCurrentRoute()
+  }
 
 }
