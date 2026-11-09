@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {NavService} from '../services/nav-service';
 import {Form} from '../form/form';
 import {FormModel} from '../models/form-model';
@@ -9,6 +9,7 @@ import {FormModel} from '../models/form-model';
     Form
   ],
   templateUrl: './courses.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './courses.css',
 })
 export class Courses {

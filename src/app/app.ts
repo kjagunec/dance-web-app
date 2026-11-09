@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {Nav} from './nav/nav';
 import {Footer} from './footer/footer';
@@ -7,6 +7,7 @@ import {Footer} from './footer/footer';
   selector: 'app-root',
   imports: [RouterOutlet, Nav, Footer],
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.css'
 })
 export class App {}

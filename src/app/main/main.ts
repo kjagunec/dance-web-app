@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {NavService} from '../services/nav-service';
 import {RouterLink} from '@angular/router';
 
@@ -8,6 +8,7 @@ import {RouterLink} from '@angular/router';
     RouterLink
   ],
   templateUrl: './main.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './main.css',
 })
 export class Main {
